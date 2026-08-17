@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Products &amp; Services - Gamini Engineering Works</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#183100",
+                        "surface-dim": "#d8dbd9",
+                        "on-primary": "#ffffff",
+                        "primary": "#003317",
+                        "tertiary-fixed": "#b0f66c",
+                        "surface-container-low": "#f1f4f2",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c1c9bf",
+                        "surface-container-high": "#e6e9e7",
+                        "tertiary-container": "#274900",
+                        "surface-container": "#ecefec",
+                        "on-tertiary-fixed": "#0e2000",
+                        "secondary": "#1b6c3b",
+                        "inverse-on-surface": "#eef1ef",
+                        "on-secondary-fixed-variant": "#005228",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#414941",
+                        "on-secondary-container": "#237240",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#181c1b",
+                        "surface-variant": "#e0e3e1",
+                        "tertiary-fixed-dim": "#96d953",
+                        "primary-container": "#174a2a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#00210d",
+                        "on-secondary-fixed": "#00210c",
+                        "inverse-surface": "#2d3130",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#89d89c",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#9dd3a8",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f7faf8",
+                        "outline": "#717971",
+                        "secondary-container": "#a4f5b6",
+                        "secondary-fixed": "#a4f5b6",
+                        "on-primary-container": "#84b990",
+                        "on-surface": "#181c1b",
+                        "primary-fixed": "#b9f0c3",
+                        "background": "#f7faf8",
+                        "surface-container-highest": "#e0e3e1",
+                        "surface-tint": "#376946",
+                        "on-tertiary-fixed-variant": "#2b5000",
+                        "primary-fixed-dim": "#9dd3a8",
+                        "on-primary-fixed-variant": "#1e502f",
+                        "surface": "#f7faf8",
+                        "on-tertiary-container": "#7dbe3b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap-md": "80px",
+                        "section-gap-lg": "120px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Manrope"],
+                        "label-caps": ["Inter"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "stat-number": ["Manrope"],
+                        "display-lg-mobile": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "stat-number": ["48px", { "lineHeight": "1.0", "fontWeight": "800" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .technical-shadow {
+            box-shadow: 0 10px 30px -5px rgba(23, 74, 42, 0.05);
+        }
+        .technical-shadow-hover:hover {
+            box-shadow: 0 20px 40px -10px rgba(23, 74, 42, 0.1);
+            transform: translateY(-4px);
+        }
+        .gold-accent { color: #C8A951; }
+        .gold-accent-bg { background-color: #C8A951; }
+        .bg-deep-charcoal { background-color: #171B1A; }
+        .text-deep-charcoal { color: #171B1A; }
+        
+        /* Animations */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up {
+            animation: fadeUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+        
+        /* Loading Screen */
+        .loading-screen {
+            position: fixed;
+            inset: 0;
+            background-color: #f7faf8;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+        }
+        .loading-screen.hidden-loader {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .loader-logo {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: .7; transform: scale(0.95); }
+        }
+    </style>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                document.getElementById('loading-screen').classList.add('hidden-loader');
+                
+                // Trigger intersection observer for animations
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.animationPlayState = 'running';
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                document.querySelectorAll('.animate-fade-up').forEach((el) => {
+                    el.style.animationPlayState = 'paused';
+                    observer.observe(el);
+                });
+            }, 800); // Simulated load time
+        });
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary selection:text-on-secondary">
+<!-- Loading Screen -->
+<div class="loading-screen" id="loading-screen">
+<div class="loader-logo font-display-lg text-headline-lg font-bold text-primary flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary mb-4" style="font-size: 48px;">settings</span>
+        Gamini Engineering
+    </div>
+</div>
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-surface shadow-sm border-b border-outline-variant transition-colors duration-250 ease-out animate-fade-up">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<div class="font-display-lg text-headline-md font-bold text-primary">
+                Gamini Engineering
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-250" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-250" href="#">About</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-250" href="#">Capabilities</a>
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1" href="#">Products</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-250" href="#">Sectors</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-250" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<div class="hidden md:block relative group">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-secondary transition-colors" style="font-variation-settings: 'FILL' 0;">search</span>
+<input class="pl-10 pr-4 py-2 border-[1.5px] border-surface-variant rounded-DEFAULT focus:border-secondary focus:ring-1 focus:ring-secondary text-body-md transition-all duration-300 w-48 focus:w-64" placeholder="Search..." type="text"/>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-DEFAULT font-bold text-body-md hover:bg-primary hover:shadow-lg hover:-translate-y-0.5 transition-all duration-250">
+                    Request Quote
+                </button>
+</div>
+</div>
+</nav>
+<!-- Compact Hero -->
+<header class="pt-32 pb-24 bg-deep-charcoal text-white relative overflow-hidden animate-fade-up delay-100">
+<div class="absolute inset-0 opacity-20" data-alt="A moody, high-contrast industrial setting featuring precise, heavy engineering machinery. Soft, technical blue-green rim lighting highlights the metallic textures of the equipment, conveying solidity, precision, and modern manufacturing capabilities in a premium corporate style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPXAcns3qKLq0hPkX_hPlAuiz4WuSRCpcrsKcOtK-HOwLK-HIuJAiztapisJlkY4riQZhN2tOyDfJW0VB2gYL46HdHmcTgn0OaqKc0UXm1irgdHmm7GkDAQisOyMZ3bzb0Q755VcsoHFbRtjUHbLpwc1QK1EhvTMmyDG2pI6v-GQuQlh4yMWsZhXJAlj7nzGZr1KqRWo_aHLRJg-pSeCPF7cYPKzpk7tVpeLvLvraIp1PfgvQVxhjc')"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 text-center">
+<span class="font-label-caps text-label-caps uppercase tracking-widest gold-accent mb-4 block animate-fade-up delay-200">Our Portfolio</span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg mb-6 text-on-primary animate-fade-up delay-300">Products &amp; Services</h1>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl mx-auto opacity-90 animate-fade-up delay-400">
+                Precision-engineered industrial machinery designed for durability, efficiency, and maximum operational throughput in heavy manufacturing environments.
+            </p>
+</div>
+</header>
+<!-- Filter & Search Section -->
+<section class="py-12 bg-surface-bright border-b border-surface-variant sticky top-20 z-40 shadow-sm animate-fade-up delay-100">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-wrap gap-2 w-full md:w-auto overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
+<button class="px-5 py-2 rounded-full bg-secondary text-on-secondary font-bold text-body-md whitespace-nowrap hover:bg-primary transition-all duration-300 hover:shadow-md transform hover:-translate-y-0.5">All Products</button>
+<button class="px-5 py-2 rounded-full bg-surface text-on-surface-variant border border-outline-variant hover:border-secondary hover:text-secondary hover:bg-surface-container-low font-body-md text-body-md whitespace-nowrap transition-all duration-300 hover:shadow-sm">Tea Machinery</button>
+<button class="px-5 py-2 rounded-full bg-surface text-on-surface-variant border border-outline-variant hover:border-secondary hover:text-secondary hover:bg-surface-container-low font-body-md text-body-md whitespace-nowrap transition-all duration-300 hover:shadow-sm">Rubber Machinery</button>
+<button class="px-5 py-2 rounded-full bg-surface text-on-surface-variant border border-outline-variant hover:border-secondary hover:text-secondary hover:bg-surface-container-low font-body-md text-body-md whitespace-nowrap transition-all duration-300 hover:shadow-sm">Conveyors</button>
+<button class="px-5 py-2 rounded-full bg-surface text-on-surface-variant border border-outline-variant hover:border-secondary hover:text-secondary hover:bg-surface-container-low font-body-md text-body-md whitespace-nowrap transition-all duration-300 hover:shadow-sm">Local Agency</button>
+</div>
+<div class="relative w-full md:w-80 group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-secondary transition-colors" style="font-variation-settings: 'FILL' 0;">search</span>
+<input class="w-full pl-12 pr-4 py-3 border-[1.5px] border-surface-variant rounded-DEFAULT bg-surface focus:border-secondary focus:ring-1 focus:ring-secondary focus:shadow-md text-body-md transition-all duration-300" placeholder="Search specific models..." type="text"/>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<main class="py-section-gap-md md:py-section-gap-lg bg-background">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<article class="bg-surface-container-low border border-surface-variant rounded-DEFAULT overflow-hidden transition-all duration-300 ease-out technical-shadow-hover hover:border-secondary hover:shadow-xl group flex flex-col h-full animate-fade-up delay-100">
+<div class="h-64 overflow-hidden relative bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" data-alt="A massive, pristine Heavy Duty Charge Tea Roller machine inside an immaculate industrial facility. The metallic surfaces gleam under bright, cool-toned factory lighting. The machine is painted in standard engineering green with polished stainless steel components, showcasing heavy-duty construction and precise engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7UaYOnrZhgsRFoCJkcVgDsNuUhuRuUIGXJ9rRg4cW3PnywChUE9OXSBLmFmxr6IV-5CZ5b8rHzi73DMMwIx7Uuo4b1-k_p0sdseDvds5jXtEMbJl339kvGKXxUKgVttHfdKsLLsqVQ1CeIvx_3uFLmCDJnD61QLuS9XYc8u_fRXU-V7IsmBUktFdhn5my4C5QCTVlvqBvbjwHSZV7LhM5fXIECn0A5Zdzv0VIwuLbSqUCPvML2jI4"/>
+<div class="absolute top-4 left-4 bg-surface text-secondary px-3 py-1 rounded-DEFAULT font-label-caps text-label-caps uppercase shadow-sm border border-outline-variant">
+                            Tea Machinery
+                        </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-secondary transition-colors">Heavy Duty Charge Tea Roller</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            Engineered for continuous high-capacity processing with advanced pressure control systems and reinforced structural integrity for prolonged lifespans.
+                        </p>
+<a class="inline-flex items-center font-bold text-secondary text-body-md group/link mt-auto" href="#">
+                            View Details 
+                            <span class="material-symbols-outlined ml-1 group-hover/link:translate-x-2 transition-transform duration-300" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="bg-surface-container-low border border-surface-variant rounded-DEFAULT overflow-hidden transition-all duration-300 ease-out technical-shadow-hover hover:border-secondary hover:shadow-xl group flex flex-col h-full animate-fade-up delay-200">
+<div class="h-64 overflow-hidden relative bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" data-alt="A specialized industrial Crepe Rubber Roller assembly in a well-lit production environment. The machine features thick, heavy steel rollers and robust gearing mechanisms. The lighting emphasizes the solid, unyielding nature of the equipment, styled in a clean, modern corporate engineering aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_ml4ATRkI_qF2TljCKKA39pdon3kjY0_eqT-3X9rO02njVv9xzh5sfJIHlQMJNCAGqXCQZOzpCKslItIzqmo547kmNXaI7RcNFd4zgUcbaJkLPQVzBjdA2bcbbhYB3ZskBUSvot2FX4CkVMLuryvWafQ_bqJ49Y5S4qdYCDiNmnOTKexPeZKrcdJb1qKKn4bRNcKF7avenNd5HtPe20ojhnqB-s4dNnlueZMNmsyqojxlL8_pjJ0W"/>
+<div class="absolute top-4 left-4 bg-surface text-secondary px-3 py-1 rounded-DEFAULT font-label-caps text-label-caps uppercase shadow-sm border border-outline-variant">
+                            Rubber Machinery
+                        </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-secondary transition-colors">Crepe Rubber Mill</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            Precision milled chilled cast iron rolls ensuring uniform thickness. Features automated tensioning and water-cooled thermal management.
+                        </p>
+<a class="inline-flex items-center font-bold text-secondary text-body-md group/link mt-auto" href="#">
+                            View Details 
+                            <span class="material-symbols-outlined ml-1 group-hover/link:translate-x-2 transition-transform duration-300" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="bg-surface-container-low border border-surface-variant rounded-DEFAULT overflow-hidden transition-all duration-300 ease-out technical-shadow-hover hover:border-secondary hover:shadow-xl group flex flex-col h-full animate-fade-up delay-300">
+<div class="h-64 overflow-hidden relative bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" data-alt="A long, sophisticated industrial conveyor system transporting materials across a clean factory floor. The conveyor features green support structures and stainless steel guide rails. The image is bright, capturing the efficiency and scale of modern logistics engineering in a premium technical style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdnR3qT3V9zcUeBZaN8XuAGMNq3sHQSvH5XfBzw8tCCKIT8YcAAozcrLfiBX5LH9PmbCafR6ImBCUXTky9Q2pUaIe2TOw6d5TZ6OTpVJN06_kTE_S0qc1nZWlNA58eOuVnngv9jZ4EZ8JsZYxLe9ZY12wefVAMqD0Zb54Jgn4pHXcszPWP5PDZN6GgmlRQ7NqOdA4OtaNv-uniQ_jVEERvWje5-gqj-iEUT9NMjLLUF6jNrefhy3pL"/>
+<div class="absolute top-4 left-4 bg-surface text-secondary px-3 py-1 rounded-DEFAULT font-label-caps text-label-caps uppercase shadow-sm border border-outline-variant">
+                            Conveyors
+                        </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-secondary transition-colors">Modular Trough Conveyor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            Highly customizable bulk material handling systems featuring low-friction idlers and heavy-duty belting designed for harsh environments.
+                        </p>
+<a class="inline-flex items-center font-bold text-secondary text-body-md group/link mt-auto" href="#">
+                            View Details 
+                            <span class="material-symbols-outlined ml-1 group-hover/link:translate-x-2 transition-transform duration-300" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="bg-surface-container-low border border-surface-variant rounded-DEFAULT overflow-hidden transition-all duration-300 ease-out technical-shadow-hover hover:border-secondary hover:shadow-xl group flex flex-col h-full animate-fade-up delay-400">
+<div class="h-64 overflow-hidden relative bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" data-alt="A state-of-the-art Tea Sorter machine with multiple vibration decks and precision optical sensors. The equipment is sleek, painted in a premium industrial gray and green color scheme. The lighting is focused, highlighting the intricate mechanical details and modern interface panel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2tWZXJJPTKUwqQior3_zl5AGnwJinqReM6-l24O5zXw62Szu7NoWFUK9yiYn7mxXVgOBzeXFTVniWJjylShjvyA5S-P1tvkYjdo_rKn1WwMDFrkjvXPfbNHpwFBDdr5u22Mzaky0PFkhegnjL2PM9mlUbpP76XOnVTAq0SHunuuqkIjZStAjrUKT0Kcu0B1lv9tLdYQYMHfvaUFJI3UW4ruD0AFODu2Mzyw9iAESm1UdCo9ezok2W"/>
+<div class="absolute top-4 left-4 bg-surface text-secondary px-3 py-1 rounded-DEFAULT font-label-caps text-label-caps uppercase shadow-sm border border-outline-variant">
+                            Tea Machinery
+                        </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-secondary transition-colors">Vibratory Fluid Bed Dryer</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            Advanced thermal processing ensuring consistent moisture extraction with optimized energy consumption and variable amplitude control.
+                        </p>
+<a class="inline-flex items-center font-bold text-secondary text-body-md group/link mt-auto" href="#">
+                            View Details 
+                            <span class="material-symbols-outlined ml-1 group-hover/link:translate-x-2 transition-transform duration-300" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</main>
+<!-- Hotline CTA -->
+<section class="bg-surface-container-low py-20 border-t border-b border-surface-variant animate-fade-up">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row items-center justify-between bg-white p-12 rounded-lg technical-shadow border border-surface-variant hover:shadow-xl transition-shadow duration-300">
+<div class="mb-8 md:mb-0 max-w-2xl">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1; font-size: 32px;">support_agent</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">Need technical assistance?</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Talk directly to our engineering team. We provide expert consultation to help you specify the exact machinery requirements for your operational throughput and environmental conditions.
+                    </p>
+</div>
+<div class="flex-shrink-0">
+<a class="inline-flex items-center justify-center bg-secondary text-on-secondary px-8 py-4 rounded-DEFAULT font-bold text-body-lg hover:bg-primary-container transition-all duration-300 ease-out shadow-sm hover:shadow-lg hover:-translate-y-1" href="tel:+1234567890">
+<span class="material-symbols-outlined mr-2" style="font-variation-settings: 'FILL' 1;">call</span>
+                        Call Engineering Hotline
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA: Help Choosing -->
+<section class="py-section-gap-md md:py-section-gap-lg bg-deep-charcoal text-white relative overflow-hidden animate-fade-up delay-100">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7">
+<span class="font-label-caps text-label-caps uppercase tracking-widest gold-accent mb-4 block animate-fade-up delay-200">Consultation Services</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg mb-6 animate-fade-up delay-300">Not sure which system fits your line?</h2>
+<p class="font-body-lg text-body-lg text-surface-variant mb-8 opacity-90 max-w-xl animate-fade-up delay-400">
+                    Our application engineers can conduct a comprehensive analysis of your current production line to recommend customized machinery upgrades that maximize yield and minimize downtime.
+                </p>
+<div class="flex flex-wrap gap-4 border-l-2 border-secondary pl-6 mb-8 animate-fade-up delay-400">
+<div class="text-on-surface-variant">
+<span class="block font-bold text-white text-body-lg mb-1">Site Analysis</span>
+<span class="text-sm">Throughput evaluation</span>
+</div>
+<div class="text-on-surface-variant ml-4">
+<span class="block font-bold text-white text-body-lg mb-1">Custom Specs</span>
+<span class="text-sm">Tailored engineering</span>
+</div>
+</div>
+<a class="inline-flex items-center justify-center bg-transparent text-white border-[1.5px] border-secondary px-8 py-4 rounded-DEFAULT font-bold text-body-lg hover:bg-secondary hover:text-on-secondary transition-all duration-300 ease-out hover:shadow-lg transform hover:-translate-y-1 animate-fade-up delay-500" href="#">
+                    Request a Consultation
+                </a>
+</div>
+<div class="md:col-span-5 h-[400px] relative rounded-lg overflow-hidden border border-surface-variant opacity-80 animate-fade-up delay-300 group">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A blueprint schematic overlaid on top of a dark, abstract industrial background. The technical drawing shows exact measurements and gears, utilizing a moody charcoal and gold accent palette to communicate heritage, precision, and bespoke engineering consultation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5oVeyl1wozwZnlupRJhqu_2K_Mq2XxvBsgpXjx-iHZ6Puf0THQG88hNdb957ZsHUHzWJtjShbr7YuImzyZxkbxF-tzDCEEXA-QTgTPQJ96nsUVvbrORECOJAAPZlYQfBfetHgKtH7filXX-P9HKU_mKAiApCG65Dgsmm0cKkstO7O8CzL_AleM0yhxS68TJhAwG5o6-1jF3vA-DQJBeLzmMBSJOV0Npv7tBJ0MJIniYHYIUeYdZcF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-charcoal to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-section-gap-md bg-inverse-surface grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop flat animate-fade-up">
+<div class="col-span-1 md:col-span-1">
+<div class="font-display-lg text-headline-md font-bold text-on-primary mb-4">
+                Gamini Engineering
+            </div>
+<p class="font-body-md text-body-md text-surface-variant opacity-80">
+                Precision engineering solutions driving industrial progress since 1977.
+            </p>
+</div>
+<div class="col-span-1 md:col-span-2 flex flex-col md:flex-row justify-center gap-8 md:gap-16">
+<div class="flex flex-col space-y-3">
+<h4 class="font-bold text-secondary-fixed text-body-md mb-2">Legal</h4>
+<a class="text-surface-variant opacity-80 hover:text-white transition-opacity ease-in-out duration-200 font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-surface-variant opacity-80 hover:text-white transition-opacity ease-in-out duration-200 font-body-md text-body-md" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="font-bold text-secondary-fixed text-body-md mb-2">Company</h4>
+<a class="text-surface-variant opacity-80 hover:text-white transition-opacity ease-in-out duration-200 font-body-md text-body-md" href="#">ISO Certifications</a>
+<a class="text-surface-variant opacity-80 hover:text-white transition-opacity ease-in-out duration-200 font-body-md text-body-md" href="#">Global Locations</a>
+</div>
+</div>
+<div class="col-span-1 md:col-span-1 flex items-end justify-start md:justify-end">
+<p class="font-body-md text-body-md text-secondary-fixed">
+                © 2024 Gamini Engineering Works. Precision Engineering Since 1977.
+            </p>
+</div>
+</footer>
+</body></html>

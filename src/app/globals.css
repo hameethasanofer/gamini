@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .pulse-monogram {
+    animation: pulse-monogram 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .technical-shadow {
+    box-shadow: 0 10px 30px -5px rgba(23, 74, 42, 0.08);
+  }
+
+  .technical-shadow-hover {
+    transition: all 0.3s ease;
+  }
+  .technical-shadow-hover:hover {
+    box-shadow: 0 20px 40px -5px rgba(23, 74, 42, 0.15);
+    transform: translateY(-4px);
+  }
+
+  .glass-card {
+    background: rgba(23, 27, 26, 0.85);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(164, 245, 182, 0.2);
+  }
+
+  /* Smooth Entrance Scroll Animations */
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal-on-scroll.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-delay-1 { transition-delay: 0.15s; }
+  .reveal-delay-2 { transition-delay: 0.3s; }
+  .reveal-delay-3 { transition-delay: 0.45s; }
+}
+
+@keyframes pulse-monogram {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7faf8;
+  color: #181c1b;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', sans-serif;
+}

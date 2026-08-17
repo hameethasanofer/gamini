@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Automated Tea Sorter Series X - Gamini Engineering</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error": "#ba1a1a",
+                      "on-secondary-container": "#237240",
+                      "on-background": "#181c1b",
+                      "on-primary-container": "#84b990",
+                      "surface-container": "#ecefec",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface": "#181c1b",
+                      "outline": "#717971",
+                      "tertiary-fixed": "#b0f66c",
+                      "surface": "#f7faf8",
+                      "surface-tint": "#376946",
+                      "on-secondary-fixed-variant": "#005228",
+                      "tertiary-fixed-dim": "#96d953",
+                      "surface-variant": "#e0e3e1",
+                      "on-surface-variant": "#414941",
+                      "on-tertiary-container": "#7dbe3b",
+                      "on-primary-fixed": "#00210d",
+                      "surface-container-high": "#e6e9e7",
+                      "primary-fixed-dim": "#9dd3a8",
+                      "error-container": "#ffdad6",
+                      "on-secondary": "#ffffff",
+                      "surface-container-highest": "#e0e3e1",
+                      "on-primary": "#ffffff",
+                      "inverse-on-surface": "#eef1ef",
+                      "on-tertiary-fixed": "#0e2000",
+                      "inverse-primary": "#9dd3a8",
+                      "on-secondary-fixed": "#00210c",
+                      "on-error": "#ffffff",
+                      "primary-fixed": "#b9f0c3",
+                      "primary": "#003317",
+                      "primary-container": "#174a2a",
+                      "surface-dim": "#d8dbd9",
+                      "secondary-container": "#a4f5b6",
+                      "secondary": "#1b6c3b",
+                      "on-primary-fixed-variant": "#1e502f",
+                      "tertiary-container": "#274900",
+                      "tertiary": "#183100",
+                      "surface-container-low": "#f1f4f2",
+                      "outline-variant": "#c1c9bf",
+                      "surface-bright": "#f7faf8",
+                      "on-tertiary-fixed-variant": "#2b5000",
+                      "inverse-surface": "#2d3130",
+                      "background": "#f7faf8",
+                      "secondary-fixed": "#a4f5b6",
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed-dim": "#89d89c",
+                      "on-error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "gutter": "24px",
+                      "section-gap-lg": "120px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px",
+                      "section-gap-md": "80px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Manrope"
+                      ],
+                      "headline-md": [
+                              "Manrope"
+                      ],
+                      "display-lg-mobile": [
+                              "Manrope"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "stat-number": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "stat-number": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "fontWeight": "800"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Subtle Technical Shadow */
+        .tech-shadow {
+            box-shadow: 0 4px 30px rgba(0, 51, 23, 0.05);
+        }
+        .tech-shadow-hover:hover {
+            box-shadow: 0 8px 40px rgba(0, 51, 23, 0.08);
+            transform: translateY(-4px);
+        }
+        
+        /* Blueprint Pattern */
+        .bg-blueprint {
+            background-color: #0d1a12;
+            background-image: linear-gradient(rgba(185, 240, 195, 0.05) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(185, 240, 195, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline shadow-sm dark:shadow-none">
+<div class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center h-20">
+<!-- Brand -->
+<a class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight" href="#">
+                Gamini Engineering
+            </a>
+<!-- Navigation -->
+<nav class="hidden md:flex gap-8 items-center h-full">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-250 ease-out flex items-center h-full" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-250 ease-out flex items-center h-full" href="#">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-250 ease-out flex items-center h-full" href="#">Capabilities</a>
+<a class="font-body-md text-body-md text-secondary font-bold border-b-2 border-secondary h-full flex items-center pt-0.5" href="#">Products</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-250 ease-out flex items-center h-full" href="#">Sectors</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-250 ease-out flex items-center h-full" href="#">Contact</a>
+</nav>
+<!-- Trailing Action -->
+<div class="hidden md:flex gap-4 items-center">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-secondary transition-colors">search</span>
+<button class="bg-secondary text-white px-6 py-2.5 rounded hover:bg-primary transition-colors duration-250 ease-out font-body-md text-body-md font-medium">
+                    Request Quote
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-20">
+<!-- Breadcrumbs -->
+<div class="bg-surface-container-low border-b border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4 flex items-center gap-2 font-body-md text-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Products</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Tea Machinery</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-primary font-medium">Automated Tea Sorter Series X</span>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<!-- Product Gallery -->
+<div class="lg:col-span-7 flex flex-col gap-4">
+<!-- Main Product Image -->
+<div class="bg-surface-container-highest rounded-xl overflow-hidden tech-shadow relative aspect-[4/3] lg:aspect-video flex items-center justify-center group border-8 border-primary/10 shadow-2xl">
+<img class="object-cover w-full h-full absolute inset-0 transition-transform duration-700 group-hover:scale-105" data-alt="High-fidelity, professional industrial photography of an advanced automated tea sorting machine in a modern, clean factory setting. The lighting is crisp, highlighting the stainless steel surfaces and technical components. Shallow depth of field with a blurred manufacturing background. Professional, premium engineering aesthetic." src="https://lh3.googleusercontent.com/aida/AP1WRLvv5zNMZKHckunY0shYOUaV9w1AkAI-vOUsr4HNFRoSRuQqd8nVuuMJvlZ0e7okOhJiYipnQLI7twg5lN1_C9IZGnvrmiDoYkH8gYvJvmtpCae0ODXBOUVSIEI6bUoSgXztzj0URBz3P6Bn6x1wXydqz2CkpiWP6beCDQIldT6VazkgppFR5hi-OKW68-eqOVjuBMTxp7GJBxshWUg_ZRVHEl2pVVI_MsaMEXnHHak4fGFMpCOzW7-6SEI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-60 border-[12px] border-white/5"></div>
+<div class="absolute bottom-4 left-4 bg-black/50 backdrop-blur-md text-white px-4 py-2 rounded font-label-caps text-xs tracking-widest border border-white/20 bg-primary/80 border-l-4 border-l-secondary">
+                            SERIES X - MAIN ARRAY
+                        </div>
+</div>
+<!-- Thumbnails Grid -->
+<div class="grid grid-cols-3 gap-4">
+<div class="bg-surface-container-highest rounded-lg overflow-hidden relative aspect-[4/3] cursor-pointer group border-2 border-primary tech-shadow">
+<img class="object-cover w-full h-full absolute inset-0 transition-transform duration-500 group-hover:scale-110" data-alt="A front-facing, professional industrial shot of an automated tea sorting machine, stainless steel, high-tech sensors, clean factory background, premium engineering lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAHR78mjJuHnJW5NR38z4SjD2CeY-DgU0B7ecUiUnEjD2VsFTXPF0-gFXCJXHB5CEtXjeu8Pjl9YKEpHtOy7P817EwniEsekMhsJVNPMbJDUZen9HYNuNR8NmgrGTMSIlBErhTvkGgwYH7WCePY0JDjiSla_SPWzcU9hEKFEdRFxH_P7Dsp1AuGm5soEjEpgz4XvrvHFAVMn3kzf7TvmBpnTTxbJbhNv7ZW-Q3da8njW-llR7r3WZW"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="bg-surface-container-highest rounded-lg overflow-hidden relative aspect-[4/3] cursor-pointer group border-2 border-transparent hover:border-primary/50 transition-colors tech-shadow">
+<img class="object-cover w-full h-full absolute inset-0 transition-transform duration-500 group-hover:scale-110" data-alt="A side-profile technical view of an industrial automated tea sorter, showing internal conveyor systems and pneumatic components, clean manufacturing environment, professional photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl6eDyzz_iO_NEXYm5LROkr9FAlKhgeK1DfeeZkAkxWQqxOB8IqFBQGqJ1v7XncxzAMGnLO8wsReD8Igb9OJC3pIE_qZLcQdfR649oEK3lnf4HDGGTCxqlP4cIwCAoHWYXH2_GndenvtDYhULWBURQd9jtyzldGaVWIwKvRoG5aByBvGJqDE0j0IJ_AlvXxHWJk3BJkBDDVB-NhXlA6pI_ISvi8qPdG4fKiioj1xXk2cNd6Yub5NFK"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="bg-surface-container-highest rounded-lg overflow-hidden relative aspect-[4/3] cursor-pointer group border-2 border-transparent hover:border-primary/50 transition-colors tech-shadow">
+<img class="object-cover w-full h-full absolute inset-0 transition-transform duration-500 group-hover:scale-110" data-alt="A detailed perspective shot of the rear control panel and sorting mechanisms of an industrial tea machine, crisp focus on mechanical parts, stainless steel, premium lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL5vi232kRKhh7WpQiD1yedN6GdhQ7rGYZzuhuyoGQn134g4hxemlTZ4Evf8wqCJo8OFDjIM8Zz-w4Wci1yrcaIceHb2VqRGpc-wg_09zBKjPrt0-W7FXFPkV3nmdKDKFW2QKMPLwOdauvOPbRbpOUmk0mFH4T8lA51W9YyP_g0f-aBXoj1DqwIyjHxh_kCoiGV3ltCxYMbMZi4GTxMH_1Lnmqa-NbJ4PAtpqXGD8EV7btAIzku8pw"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+</div>
+</div>
+</div>
+<!-- Product Info -->
+<div class="lg:col-span-5 flex flex-col justify-start lg:pt-8">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-[2px] bg-primary"></div>
+<div class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Precision Tea Machinery</div>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 leading-tight">Automated Tea Sorter Series X</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                        The Series X represents the pinnacle of optical sorting technology for the modern tea industry. Utilizing advanced multi-spectral cameras and AI-driven defect recognition, it ensures unparalleled purity and consistency in every batch, significantly reducing manual labor while increasing overall yield. Designed for demanding 24/7 continuous operation environments.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-container transition-all duration-300 ease-out font-body-lg text-body-lg font-medium shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                            Request Technical Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="bg-surface border-2 border-outline-variant text-on-surface px-8 py-4 rounded-lg hover:border-primary hover:text-primary transition-all duration-300 ease-out font-body-lg text-body-lg font-medium flex items-center justify-center gap-2 group">
+<span class="material-symbols-outlined group-hover:-translate-y-1 transition-transform">download</span> Download Specs
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specifications (Blueprint Design) -->
+<section class="bg-blueprint text-on-primary py-section-gap-lg border-y border-primary/20 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-20 pointer-events-none">
+<span class="font-display-lg text-[120px] text-primary-fixed font-bold leading-none">MK-X</span>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<div class="font-label-caps text-label-caps text-primary-fixed tracking-widest mb-4 uppercase flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">memory</span> Precision Data
+                        </div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white">System Specifications</h2>
+</div>
+<div class="text-right">
+<span class="font-body-md text-primary-fixed/80 block">Document Ref: GEW-TSX-2024</span>
+<span class="font-body-md text-primary-fixed/80 block">Rev: 2.4.1</span>
+</div>
+</div>
+<!-- High-Density Data Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border-t border-l border-primary/30 bg-[#0d1a12]/80 backdrop-blur-sm">
+<!-- Spec Item -->
+<div class="p-6 border-b border-r border-primary/30 flex justify-between items-center hover:bg-primary/5 transition-colors">
+<span class="font-body-md text-primary-fixed/70 font-medium">Throughput Capacity</span>
+<span class="font-headline-md text-white font-mono tracking-tight">2000 kg/hr</span>
+</div>
+<!-- Spec Item -->
+<div class="p-6 border-b border-r border-primary/30 flex justify-between items-center hover:bg-primary/5 transition-colors">
+<span class="font-body-md text-primary-fixed/70 font-medium">Optical Precision</span>
+<span class="font-headline-md text-white font-mono tracking-tight">99.98%</span>
+</div>
+<!-- Spec Item -->
+<div class="p-6 border-b border-r border-primary/30 flex justify-between items-center hover:bg-primary/5 transition-colors">
+<span class="font-body-md text-primary-fixed/70 font-medium">Power Requirement</span>
+<span class="font-headline-md text-white font-mono tracking-tight">380V / 15kW</span>
+</div>
+<!-- Spec Item -->
+<div class="p-6 border-b border-r border-primary/30 flex justify-between items-center hover:bg-primary/5 transition-colors">
+<span class="font-body-md text-primary-fixed/70 font-medium">Air Consumption</span>
+<span class="font-headline-md text-white font-mono tracking-tight">1200 L/min</span>
+</div>
+<!-- Spec Item -->
+<div class="p-6 border-b border-r border-primary/30 flex justify-between items-center hover:bg-primary/5 transition-colors">
+<span class="font-body-md text-primary-fixed/70 font-medium">Dimensions (L x W x H)</span>
+<span class="font-headline-md text-white font-mono tracking-tight">4.2m x 1.8m x 2.4m</span>
+</div>
+<!-- Spec Item -->
+<div class="p-6 border-b border-r border-primary/30 flex justify-between items-center hover:bg-primary/5 transition-colors">
+<span class="font-body-md text-primary-fixed/70 font-medium">Total System Weight</span>
+<span class="font-headline-md text-white font-mono tracking-tight">1,850 kg</span>
+</div>
+<!-- Spec Item -->
+<div class="p-6 border-b border-r border-primary/30 flex justify-between items-center hover:bg-primary/5 transition-colors">
+<span class="font-body-md text-primary-fixed/70 font-medium">Camera System</span>
+<span class="font-headline-md text-white font-mono tracking-tight">Multi-Spectral RGB+IR</span>
+</div>
+<!-- Spec Item -->
+<div class="p-6 border-b border-r border-primary/30 flex justify-between items-center hover:bg-primary/5 transition-colors">
+<span class="font-body-md text-primary-fixed/70 font-medium">Ejector Type</span>
+<span class="font-headline-md text-white font-mono tracking-tight">High-Frequency Magnetic</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Benefits -->
+<section class="bg-surface max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap-lg">
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<div class="font-label-caps text-label-caps text-primary tracking-widest mb-4 uppercase">Operational Impact</div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-6">Engineering Excellence</h2>
+<p class="font-body-lg text-on-surface-variant">Designed from the ground up to maximize facility productivity while significantly reducing total cost of ownership through robust, intelligent componentry.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Benefit Card -->
+<div class="bg-surface-container-lowest border border-primary/10 rounded-2xl p-10 tech-shadow-hover transition-all duration-300 ease-out flex flex-col h-full hover:bg-primary/[0.02]">
+<div class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-8 text-primary border border-primary/20">
+<span class="material-symbols-outlined text-[32px]">trending_up</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Increased Yield</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow leading-relaxed">Advanced algorithmic sorting minimizes good-product rejection, maximizing your viable output and directly impacting profitability through enhanced precision and multi-spectral analysis.</p>
+</div>
+<!-- Benefit Card -->
+<div class="bg-surface-container-lowest border border-primary/10 rounded-2xl p-10 tech-shadow-hover transition-all duration-300 ease-out flex flex-col h-full hover:bg-primary/[0.02]">
+<div class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-8 text-primary border border-primary/20">
+<span class="material-symbols-outlined text-[32px]">build</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Reduced Downtime</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow leading-relaxed">Self-cleaning optics and industrial-grade pneumatic ejectors ensure continuous operation with minimal maintenance interventions required, optimizing lifecycle and operational continuity.</p>
+</div>
+<!-- Benefit Card -->
+<div class="bg-surface-container-lowest border border-primary/10 rounded-2xl p-10 tech-shadow-hover transition-all duration-300 ease-out flex flex-col h-full hover:bg-primary/[0.02]">
+<div class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-8 text-primary border border-primary/20">
+<span class="material-symbols-outlined text-[32px]">speed</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">High Throughput</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow leading-relaxed">Capable of processing up to 2 tons per hour without compromising on sorting accuracy, ideal for large-scale production facilities seeking to scale operations efficiently.</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-container-low py-section-gap-md border-t border-outline-variant">
+<div class="max-w-[800px] mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<div class="font-label-caps text-label-caps text-primary tracking-widest mb-4 uppercase">Next Steps</div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-6">Request a Technical Quote</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">Our engineering team is ready to discuss your specific operational requirements and provide a detailed configuration and pricing estimate for the Series X.</p>
+<form class="text-left bg-surface-container-lowest p-8 md:p-10 rounded-2xl border border-outline-variant tech-shadow">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block font-body-md text-sm font-medium text-on-surface mb-2" for="name">Full Name</label>
+<input class="w-full border-1.5 border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="name" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block font-body-md text-sm font-medium text-on-surface mb-2" for="company">Company Name</label>
+<input class="w-full border-1.5 border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="company" placeholder="Acme Tea Estates" type="text"/>
+</div>
+</div>
+<div class="mb-6">
+<label class="block font-body-md text-sm font-medium text-on-surface mb-2" for="email">Work Email</label>
+<input class="w-full border-1.5 border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="email" placeholder="john@example.com" type="email"/>
+</div>
+<div class="mb-8">
+<label class="block font-body-md text-sm font-medium text-on-surface mb-2" for="details">Project Details (Optional)</label>
+<textarea class="w-full border-1.5 border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="details" placeholder="Tell us about your current capacity and requirements..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-container transition-colors duration-250 ease-out font-body-lg text-body-lg font-medium shadow-sm" type="button">
+                        Submit Request
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-inverse-surface w-full py-section-gap-md">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<span class="font-display-lg text-headline-md font-bold text-on-primary">Gamini Engineering</span>
+<p class="font-body-md text-body-md text-surface-variant opacity-80 mt-4">
+                    © 2024 Gamini Engineering Works. Precision Engineering Since 1977.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-col md:flex-row justify-end gap-8 md:gap-16 pt-2 md:pt-0">
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-surface-variant opacity-80 hover:text-white transition-opacity ease-in-out duration-200" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-surface-variant opacity-80 hover:text-white transition-opacity ease-in-out duration-200" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-surface-variant opacity-80 hover:text-white transition-opacity ease-in-out duration-200" href="#">ISO Certifications</a>
+<a class="font-body-md text-body-md text-surface-variant opacity-80 hover:text-white transition-opacity ease-in-out duration-200" href="#">Global Locations</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

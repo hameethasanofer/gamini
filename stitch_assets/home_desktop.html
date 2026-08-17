@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gamini Engineering Works - Engineering Solutions Built for Performance</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "tertiary": "#183100",
+                            "surface-dim": "#d8dbd9",
+                            "on-primary": "#ffffff",
+                            "primary": "#003317",
+                            "tertiary-fixed": "#b0f66c",
+                            "surface-container-low": "#f1f4f2",
+                            "on-error": "#ffffff",
+                            "outline-variant": "#c1c9bf",
+                            "surface-container-high": "#e6e9e7",
+                            "tertiary-container": "#274900",
+                            "surface-container": "#ecefec",
+                            "on-tertiary-fixed": "#0e2000",
+                            "secondary": "#1b6c3b",
+                            "inverse-on-surface": "#eef1ef",
+                            "on-secondary-fixed-variant": "#005228",
+                            "error": "#ba1a1a",
+                            "on-surface-variant": "#414941",
+                            "on-secondary-container": "#237240",
+                            "on-secondary": "#ffffff",
+                            "on-background": "#181c1b",
+                            "surface-variant": "#e0e3e1",
+                            "tertiary-fixed-dim": "#96d953",
+                            "primary-container": "#174a2a",
+                            "surface-container-lowest": "#ffffff",
+                            "on-primary-fixed": "#00210d",
+                            "on-secondary-fixed": "#00210c",
+                            "inverse-surface": "#2d3130",
+                            "error-container": "#ffdad6",
+                            "secondary-fixed-dim": "#89d89c",
+                            "on-error-container": "#93000a",
+                            "inverse-primary": "#9dd3a8",
+                            "on-tertiary": "#ffffff",
+                            "surface-bright": "#f7faf8",
+                            "outline": "#717971",
+                            "secondary-container": "#a4f5b6",
+                            "secondary-fixed": "#a4f5b6",
+                            "on-primary-container": "#84b990",
+                            "on-surface": "#181c1b",
+                            "primary-fixed": "#b9f0c3",
+                            "background": "#f7faf8",
+                            "surface-container-highest": "#e0e3e1",
+                            "surface-tint": "#376946",
+                            "on-tertiary-fixed-variant": "#2b5000",
+                            "primary-fixed-dim": "#9dd3a8",
+                            "on-primary-fixed-variant": "#1e502f",
+                            "surface": "#f7faf8",
+                            "on-tertiary-container": "#7dbe3b"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.125rem",
+                            "lg": "0.25rem",
+                            "xl": "0.5rem",
+                            "full": "0.75rem"
+                    },
+                    "spacing": {
+                            "section-gap-md": "80px",
+                            "section-gap-lg": "120px",
+                            "container-max": "1280px",
+                            "margin-mobile": "20px",
+                            "gutter": "24px",
+                            "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                            "body-md": [
+                                    "Inter"
+                            ],
+                            "body-lg": [
+                                    "Inter"
+                            ],
+                            "display-lg": [
+                                    "Manrope"
+                            ],
+                            "label-caps": [
+                                    "Inter"
+                            ],
+                            "headline-lg-mobile": [
+                                    "Manrope"
+                            ],
+                            "headline-lg": [
+                                    "Manrope"
+                            ],
+                            "headline-md": [
+                                    "Manrope"
+                            ],
+                            "stat-number": [
+                                    "Manrope"
+                            ],
+                            "display-lg-mobile": [
+                                    "Manrope"
+                            ]
+                    },
+                    "fontSize": {
+                            "body-md": [
+                                    "16px",
+                                    {
+                                            "lineHeight": "1.6",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "body-lg": [
+                                    "18px",
+                                    {
+                                            "lineHeight": "1.6",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "display-lg": [
+                                    "64px",
+                                    {
+                                            "lineHeight": "1.1",
+                                            "letterSpacing": "-0.02em",
+                                            "fontWeight": "800"
+                                    }
+                            ],
+                            "label-caps": [
+                                    "12px",
+                                    {
+                                            "lineHeight": "1.0",
+                                            "letterSpacing": "0.1em",
+                                            "fontWeight": "700"
+                                    }
+                            ],
+                            "headline-lg-mobile": [
+                                    "32px",
+                                    {
+                                            "lineHeight": "1.2",
+                                            "fontWeight": "700"
+                                    }
+                            ],
+                            "headline-lg": [
+                                    "40px",
+                                    {
+                                            "lineHeight": "1.2",
+                                            "fontWeight": "700"
+                                    }
+                            ],
+                            "headline-md": [
+                                    "28px",
+                                    {
+                                            "lineHeight": "1.3",
+                                            "fontWeight": "600"
+                                    }
+                            ],
+                            "stat-number": [
+                                    "48px",
+                                    {
+                                            "lineHeight": "1.0",
+                                            "fontWeight": "800"
+                                    }
+                            ],
+                            "display-lg-mobile": [
+                                    "40px",
+                                    {
+                                            "lineHeight": "1.2",
+                                            "letterSpacing": "-0.01em",
+                                            "fontWeight": "800"
+                                    }
+                            ]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Loading Animation Styles */
+        #loader-overlay {
+            position: fixed;
+            inset: 0;
+            background-color: #f7faf8; /* bg-background */
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.8s cubic-bezier(0.65, 0, 0.35, 1), visibility 0.8s;
+        }
+        #loader-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .loader-monogram {
+            font-family: 'Manrope', sans-serif;
+            font-size: 96px;
+            font-weight: 800;
+            color: #2F7D4A;
+            animation: pulse-draw 2s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        @keyframes pulse-draw {
+            0% { transform: scale(0.95); opacity: 0.6; text-shadow: 0 0 0 rgba(47, 125, 74, 0); }
+            100% { transform: scale(1.05); opacity: 1; text-shadow: 0 0 20px rgba(47, 125, 74, 0.4); }
+        }
+
+        /* Reveal Animations */
+        .reveal, .reveal-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active, .reveal-section.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        
+        .technical-shadow {
+            box-shadow: 0 20px 40px -10px rgba(0, 51, 23, 0.05);
+        }
+        
+        .hover-lift {
+            transition: transform 0.25s ease-out, box-shadow 0.25s ease-out;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 48px -12px rgba(0, 51, 23, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- Loading Overlay -->
+<div id="loader-overlay">
+<div class="loader-monogram">G</div>
+</div>
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/100 backdrop-blur-md dark:bg-surface border-b border-outline-variant dark:border-outline shadow-sm dark:shadow-none transition-all duration-300 ease-in-out" id="main-header">
+<div class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center h-20 transition-all duration-300 ease-in-out" id="header-inner">
+<a class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed" href="#">Gamini Engineering</a>
+<nav class="hidden md:flex gap-8">
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-body-md text-body-md ease-out duration-250" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-250 font-body-md text-body-md ease-out duration-250" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-250 font-body-md text-body-md ease-out duration-250" href="#">Capabilities</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-250 font-body-md text-body-md ease-out duration-250" href="#">Products</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-250 font-body-md text-body-md ease-out duration-250" href="#">Sectors</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-250 font-body-md text-body-md ease-out duration-250" href="#">Contact</a>
+</nav>
+<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded hover:bg-primary-container transition-colors duration-250 font-body-md font-semibold">Request Quote</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center pt-20 overflow-hidden reveal-section">
+<!-- Shader Background -->
+
+<div class="max-w-container-max mx-auto px-margin-desktop w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center py-section-gap-md">
+<div class="lg:col-span-6 flex flex-col items-start gap-6 reveal">
+<span class="font-label-caps text-label-caps text-[#C8A951] uppercase tracking-widest border border-[#C8A951]/30 px-3 py-1 rounded bg-[#C8A951]/5">ENGINEERING EXCELLENCE SINCE 1977</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight">Engineering Solutions Built for <span class="text-secondary">Performance.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Delivering high-precision industrial machinery and complete turnkey engineering solutions. Combining decades of legacy craftsmanship with cutting-edge manufacturing technology.</p>
+<div class="flex gap-4 mt-4">
+<a class="bg-secondary text-on-secondary px-8 py-3.5 rounded hover:bg-primary-container transition-colors duration-250 font-body-md font-semibold flex items-center gap-2" href="#">
+                        Explore Solutions <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</a>
+<a class="border-2 border-secondary text-secondary px-8 py-3.5 rounded hover:bg-surface-container-low transition-colors duration-250 font-body-md font-semibold" href="#">
+                        Company Profile
+                    </a>
+</div>
+</div>
+<div class="lg:col-span-6 lg:col-start-7 reveal reveal-delay-2 h-full min-h-[500px] relative rounded-lg overflow-hidden technical-shadow">
+<div class="absolute inset-0 bg-primary/10 z-10 mix-blend-overlay"></div>
+<img class="w-full h-full object-cover object-center absolute inset-0" data-alt="A striking high-resolution photograph of a massive, precise industrial CNC milling machine in operation, cutting gleaming steel. The setting is a clean, modern manufacturing floor illuminated by bright, cool-toned factory lighting, creating a highly professional and technical atmosphere. The color palette emphasizes the metallic sheen of the machinery, stark white lights, and subtle deep engineering greens in the background, conveying absolute reliability and heavy industrial strength." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHk60y11r38CbGHVXiuRu6LoJtSVsxkU50NDd_AUs1dvQwIGFnimxO3wuYB_FKJlhnC8I0rYee0p4ia01uB_AO8AquYK2vhtvOk6FwmIHe02XIVsITU9fG32iTVYxLp0llf1hoBWI1P8vbXscRStD5SmKiVF7kV0s5ZwQVltC_pNbplWdIGFmsaHLHCU23gUtGYkO2EXmGSYf91X6JAAY3h2fVAyCD_zh_xSMowa1KfTqBx-8o1qPq"/>
+</div>
+</div>
+</section>
+<!-- Statistics Section -->
+<section class="bg-inverse-surface py-16 text-on-primary reveal-section">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter divide-y md:divide-y-0 md:divide-x divide-outline/30">
+<div class="flex flex-col items-center justify-center py-6 md:py-0 reveal">
+<div class="font-stat-number text-stat-number text-[#C8A951] mb-2"><span class="counter" data-target="45">0</span>+</div>
+<div class="font-label-caps text-label-caps tracking-widest text-surface-variant">YEARS OF EXPERIENCE</div>
+</div>
+<div class="flex flex-col items-center justify-center py-6 md:py-0 reveal reveal-delay-1">
+<div class="font-stat-number text-stat-number text-[#C8A951] mb-2"><span class="counter" data-target="100">0</span>+</div>
+<div class="font-label-caps text-label-caps tracking-widest text-surface-variant">INDUSTRIAL SOLUTIONS</div>
+</div>
+<div class="flex flex-col items-center justify-center py-6 md:py-0 reveal reveal-delay-2">
+<div class="font-stat-number text-stat-number text-[#C8A951] mb-2"><span class="counter" data-target="4">0</span></div>
+<div class="font-label-caps text-label-caps tracking-widest text-surface-variant">MAJOR DIVISIONS</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Engineering Divisions -->
+<section class="py-section-gap-lg bg-surface reveal-section">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center max-w-3xl mx-auto mb-16 reveal">
+<span class="font-label-caps text-label-caps text-[#C8A951] uppercase tracking-widest block mb-4">CORE CAPABILITIES</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Specialized Engineering Divisions</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-low border border-outline-variant rounded-lg overflow-hidden hover-lift technical-shadow group cursor-pointer reveal">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="A detailed close-up shot of specialized tea processing machinery in a clean industrial facility. The machinery features complex, perfectly aligned stainless steel rollers and gears. The lighting is crisp and technical, highlighting the precision of the manufacturing. The overall aesthetic is professional, with deep charcoal and metallic silver tones dominating, accented by a subtle engineering green tint in the shadows, conveying high-end industrial engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSvQLHUvSv7j1kUMJbB_S1qhaacH9ENVJ230oWhOSeigZaAXjudzH5RnWiT4Yb42QXWcIVOwlrGn0wh_277_jiZlKXbB8bmpxZcPr3Y6gP3gk8d9cATe0lupbHowITHULVfBz6JS_XNi7IgYNZJ7-Z_Wj4EU0kYhTHwAyqF2F260W9QSukt0KJEdC8WCAKYKZVkYOP453OeXibQEC6UJkbAFRq_xkZDHGm5sG2UQsEKwTQZb_1Nulf"/>
+</div>
+<div class="p-6 bg-surface-container-lowest">
+<span class="material-symbols-outlined text-secondary text-3xl mb-4 block">precision_manufacturing</span>
+<h3 class="font-headline-md text-[22px] text-primary mb-2">Tea Machinery</h3>
+<p class="font-body-md text-on-surface-variant text-sm line-clamp-3">Comprehensive manufacturing and servicing of high-efficiency equipment for the global tea processing industry.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low border border-outline-variant rounded-lg overflow-hidden hover-lift technical-shadow group cursor-pointer reveal reveal-delay-1">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="A striking industrial photograph of heavy-duty rubber mixing machinery. Massive steel components and hydraulic systems are visible in sharp focus against a subtly dark, out-of-focus factory background. The lighting is dramatic, catching the polished edges of the robust steel structures. The palette relies on strong contrasting charcoals, greys, and absolute whites, emphasizing solidity, immense strength, and institutional reliability inherent in heavy engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArtstmpJYc7DdBoFiSVbEc4WuI5oQ2xQA2Z4We9C_bg7zC6gLtkRRYCKYeI9XY-ARIyiNHBzjLHxdOGRi_b3Q6ReqP-oUlI6JTeWKUk1dqR7DIvbxd8IS-klSn3P7oBC3HvmhK0z-0bsdh5c7YrB3f4HrHmL4WkZcFhSsiafiuyOUX_danhSN3DEvdyuZIxPNLZi2vAIswFFuLzJlaHQadeC71d83so38MR0MjSVqjuXmig4W0_qYt"/>
+</div>
+<div class="p-6 bg-surface-container-lowest">
+<span class="material-symbols-outlined text-secondary text-3xl mb-4 block">conveyor_belt</span>
+<h3 class="font-headline-md text-[22px] text-primary mb-2">Rubber Machinery</h3>
+<p class="font-body-md text-on-surface-variant text-sm line-clamp-3">Robust mills, presses, and extruders engineered to withstand the demanding environments of rubber compounding.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low border border-outline-variant rounded-lg overflow-hidden hover-lift technical-shadow group cursor-pointer reveal reveal-delay-2">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="A dynamic, high-angle shot of a long, pristine industrial conveyor belt system stretching across a modern warehouse or factory floor. The structural framework is perfectly aligned, demonstrating precision layout. Bright overhead factory lights reflect off the metallic and rubber surfaces. The environment feels highly organized, systematic, and technologically advanced, utilizing a clean white and deep green corporate color scheme to communicate clarity and forward-looking logistics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRIme5sRwsCGJntUOsDE__fiaH9n7TxmIH8mezuwLx1kchlLpp7R9HxjVw8b3txYtFC2Vwzj7cVWf_qDhFZPElLM_lFzPA4V9m4LpEbxvMNGSjhnhZPTuNSflHy4fEcsFA8NTmWpPEPonopxIB26Pk5YejuCsyb1FaXUQZjrH6_xhGTDKPQlW0XTwpzN-amlC8N7ynzO5JOa07HTWITXi1j69d_8MdGroBEtLlU28Z6a8gL2spB4RS"/>
+</div>
+<div class="p-6 bg-surface-container-lowest">
+<span class="material-symbols-outlined text-secondary text-3xl mb-4 block">factory</span>
+<h3 class="font-headline-md text-[22px] text-primary mb-2">Conveyor Systems</h3>
+<p class="font-body-md text-on-surface-variant text-sm line-clamp-3">Custom-designed material handling solutions ensuring seamless flow and operational efficiency across sectors.</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-low border border-outline-variant rounded-lg overflow-hidden hover-lift technical-shadow group cursor-pointer reveal reveal-delay-3">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="A professional corporate image showing two engineers in sharp, clean safety gear reviewing complex technical blueprints on a digital tablet in front of an advanced control panel. The mood is collaborative and highly competent. The lighting is bright and modern, suggesting innovation. The aesthetic integrates stark whites, slate greys, and touches of gold and green, highlighting prestige, heritage, and international partnership in the engineering agency sector." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsDv-AIB2vONEibOoB1fYjOFQEzJDnnP4ev85bgXig_1njCzkDSSZ2tsjl2JmTtiqwq0pwKCLt4cqu-_lmfmf89Cy3SJd2IhHB2KNkKpinTlXV7Pf6R3StPE36hKNXmv8K2RUnXkcMY64FlP6p6jWOazrfntMNhm5G_3pQz_fHkwiZAOVHZO7ScSuHpZaRnlB0yLpO6XldhBQ8FFixYfOkv6kuIQID_DrHZ7Okeagv5d1UEUlWf4Yl"/>
+</div>
+<div class="p-6 bg-surface-container-lowest">
+<span class="material-symbols-outlined text-secondary text-3xl mb-4 block">handshake</span>
+<h3 class="font-headline-md text-[22px] text-primary mb-2">Local Agency</h3>
+<p class="font-body-md text-on-surface-variant text-sm line-clamp-3">Exclusive representation and support for world-leading industrial equipment manufacturers in the local market.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-inverse-surface w-full py-section-gap-md flat reveal-section">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter reveal">
+<div class="col-span-1 md:col-span-2">
+<a class="font-display-lg text-headline-md font-bold text-on-primary mb-4 block" href="#">Gamini Engineering</a>
+<p class="font-body-md text-body-md text-surface-variant opacity-80 max-w-md mb-6">
+                    Delivering precision engineering solutions since 1977. Combining decades of institutional knowledge with modern manufacturing capabilities.
+                </p>
+<p class="font-body-md text-body-md text-surface-variant opacity-60 text-sm">
+                    © 2024 Gamini Engineering Works. Precision Engineering Since 1977.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline-md text-[18px] text-secondary-fixed font-bold mb-4">Legal</h4>
+<ul class="space-y-3">
+<li><a class="font-body-md text-body-md text-surface-variant opacity-80 hover:text-white transition-opacity ease-in-out duration-200" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant opacity-80 hover:text-white transition-opacity ease-in-out duration-200" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline-md text-[18px] text-secondary-fixed font-bold mb-4">Company</h4>
+<ul class="space-y-3">
+<li><a class="font-body-md text-body-md text-surface-variant opacity-80 hover:text-white transition-opacity ease-in-out duration-200" href="#">ISO Certifications</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant opacity-80 hover:text-white transition-opacity ease-in-out duration-200" href="#">Global Locations</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            // --- Loading Animation ---
+            const loader = document.getElementById('loader-overlay');
+            // Simulate minimum load time or wait for full load
+            setTimeout(() => {
+                loader.classList.add('hidden');
+                // Remove from DOM after transition
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 800);
+            }, 600); // Small delay to show the loader nicely
+
+            // --- Header Micro-interactions ---
+            const header = document.getElementById('main-header');
+            const headerInner = document.getElementById('header-inner');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('bg-surface/90');
+                    header.classList.remove('bg-surface/100');
+                    headerInner.classList.add('h-16');
+                    headerInner.classList.remove('h-20');
+                } else {
+                    header.classList.add('bg-surface/100');
+                    header.classList.remove('bg-surface/90');
+                    headerInner.classList.add('h-20');
+                    headerInner.classList.remove('h-16');
+                }
+            });
+
+            // --- Section Entrance Animations (Intersection Observer) ---
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Stop observing once activated
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const revealElements = document.querySelectorAll('.reveal, .reveal-section');
+            revealElements.forEach(el => {
+                observer.observe(el);
+            });
+            
+            // --- Simple counter animation ---
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200; // The lower the slower
+
+            const animateCounters = () => {
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        const inc = target / speed;
+
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + inc);
+                            setTimeout(updateCount, 10);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    
+                    // Only start animation if element is in viewport
+                    const rect = counter.getBoundingClientRect();
+                    if(rect.top < window.innerHeight && rect.bottom >= 0) {
+                         updateCount();
+                         counter.classList.remove('counter'); // Prevent running again
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', animateCounters);
+            animateCounters(); // Check on load
+        });
+    </script>
+</body></html>
