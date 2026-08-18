@@ -191,7 +191,7 @@ export default function HomePage() {
       <Navbar onOpenQuote={() => setIsQuoteOpen(true)} />
 
       {/* ULTRA-LUXURY SPLIT ALIGNMENT HERO SECTION */}
-      <section className="relative min-h-[90vh] py-24 lg:py-0 flex items-center overflow-hidden bg-black text-white">
+      <section className="relative min-h-[90vh] pt-28 pb-20 lg:pt-36 lg:pb-24 flex items-center overflow-hidden bg-black text-white">
         {/* Carousel Background Images with Cross-fade */}
         {heroImages.map((imgUrl, idx) => (
           <div
@@ -213,7 +213,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#020b05] via-transparent to-black/40"></div>
 
         {/* 2-Column Split Content Container */}
-        <div className="max-w-[1280px] mx-auto px-5 md:px-12 w-full relative z-20 pt-10 reveal-on-scroll">
+        <div className="max-w-[1280px] mx-auto px-5 md:px-12 w-full relative z-20 pt-6 lg:pt-10 reveal-on-scroll">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
             {/* Left Column: High-Impact Left-Aligned Content */}
